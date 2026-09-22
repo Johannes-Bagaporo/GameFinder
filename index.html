@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameFinder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <div class="container">
+
+            <h1>🎮 GameFinder</h1>
+
+            <p>
+                Discover free-to-play games from around the world.
+            </p>
+
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a game..."
+                >
+
+                <select id="platformFilter">
+
+                    <option value="all">
+                        All Platforms
+                    </option>
+
+                    <option value="pc">
+                        PC
+                    </option>
+
+                    <option value="browser">
+                        Browser
+                    </option>
+
+                </select>
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <div id="status">
+            Loading games...
+        </div>
+
+        <section
+            id="gamesContainer"
+            class="games-grid">
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            GameFinder | Powered by FreeToGame API
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

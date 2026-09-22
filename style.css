@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    background: #1f2937;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.controls input,
+.controls select {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.controls input {
+    flex: 1;
+}
+
+.controls button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #4f46e5;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.game-card {
+    background: #1f2937;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.game-info p {
+    color: #d1d5db;
+    margin: 7px 0;
+}
+
+.game-info .genre {
+    color: #a5b4fc;
+    font-weight: bold;
+}
+
+#status {
+    text-align: center;
+    padding: 30px 0;
+    color: #d1d5db;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1f2937;
+    color: #9ca3af;
+}
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls input,
+    .controls select,
+    .controls button {
+        width: 100%;
+    }
+
+}
