@@ -92,15 +92,5 @@ gamefinder/
 └── .gitignore
 ```
 
-## Live Application
-
-YOUR_NETLIFY_LINK
-
-## GitHub Repository
-
-YOUR_GITHUB_REPOSITORY_LINK
-
-## API Documentation
-
 FreeToGame API documentation:
 https://www.freetogame.com/api-doc
